@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true, // подсвечаивает места где не указан тип
+    "module": "ESNext",
+    "target": "es5", // в какую спецификацию компилируем
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": ".", // для абсолютного импорта
+    "esModuleInterop": true, // позволяет импортировать модули CommonJs обычным образом, как модули ES
+    "allowSyntheticDefaultImports": true,
+    "plugins": [
+      {
+      "name": "typescript-plugin-css-modules" // для автомкомлита и подгрузки файлов стилей в формате style.module.scsc
+      }
+    ]
+  }, 
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  
+}
